@@ -24,6 +24,12 @@ Style-Bert-VITSのCLIを使ったプログラムです。
 <img src="https://github.com/p2-3r/GUI-for-Style-Bert-VITS2-Train/assets/159620178/6f487146-f1f9-475c-8e79-c3a93b54dd84" width="330">
 <img src="https://github.com/p2-3r/GUI-for-Style-Bert-VITS2-Train/assets/159620178/7d93a6c4-eca9-46b0-a38b-1d9c24bed1f3" width="330">
 
+## 起動環境
+
+Style-Bert-VITS2 (Version: 2.3)
+
+Python (3.10.9で動作確認)
+
 ## 起動方法
 
 ```
