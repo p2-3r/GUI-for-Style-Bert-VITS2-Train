@@ -288,20 +288,16 @@ class SlicesTab():
                         return
 
                     shutil.move(i, to_move)
-                    slice_path = str(to_move.absolute())
-                else:
-                    slice_path = str(i.absolute())
-
 
             for i in slicefile_list:
 
-                clp.info(f"\"{i.stem}\"のスライスを実行しています...")
+                clp.info(f"\"{i.name}\"のスライスを実行しています...")
 
                 proc = subprocess.Popen([f"python", "slice.py",
                                          "--min_sec", str(self.min_sec.get()),
                                          "--max_sec", str(self.max_sec.get()),
-                                         "--input_dir", slice_path,
-                                         "--model_name", i.stem,
+                                         "--input_dir", i,
+                                         "--model_name", i.name,
                                          "--min_silence_dur_ms", str(self.min_silence_dur_ms.get())
                                          ], shell=True)
 
