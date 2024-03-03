@@ -318,10 +318,10 @@ class SlicesTab():
 
                 #　書き起こしを実行
                 for i in slicefile_list:
-                    clp.info(f"\"{i}\"の書き起こしを実行しています...")
+                    clp.info(f"\"{i.name}\"の書き起こしを実行しています...")
 
                     proc = subprocess.Popen([f"python", "transcribe.py",
-                                            "--model_name", i.stem,
+                                            "--model_name", i.name,
                                             "--initial_prompt", TranscribeTab.option_prompt.get(),
                                             "--device", TranscribeTab.option_device.get(),
                                             "--language", TranscribeTab.option_lang.get(),
