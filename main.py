@@ -10,6 +10,7 @@ import subprocess
 import shutil
 
 from src.ColorPrint import Existing as clp
+from src import esd_editor
 
 # プログラムはStyleBertVITS2の仮想環境で起動しているので
 # settings.jsonを取得するためにこのプログラムがある場所を
@@ -1042,6 +1043,16 @@ if __name__ == "__main__":
                 trains_tab: "Trains"}
 
     [notebook.add(key, text=value, padding=4) for key, value in tab_dict.items()]
+
+    # メニューバーを作成
+    menubar = tk.Menu(root)
+
+    # メニューバーに追加
+    toolmenu = tk.Menu(menubar, tearoff=0)
+    toolmenu.add_command(label="esd.list Editor", command=lambda: esd_editor.create_all(root, programdir))
+
+    menubar.add_cascade(label="Open Tool", menu=toolmenu)
+    root.config(menu=menubar)
 
     # それぞれのタブの内容作成
     SlicesTab.create(slices_tab)
