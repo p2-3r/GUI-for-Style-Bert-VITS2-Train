@@ -3,7 +3,7 @@ python ./src/init_.py
 for /f "delims=" %%A in ('python ./src/read_stylepath.py') do set OUTPUT=%%A
 
 set PYDIR=%~dp0
-cd %OUTPUT%
+cd "%OUTPUT%"
 
 if exist "./venv/Scripts/activate" (
     call "./venv/Scripts/activate"
