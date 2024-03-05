@@ -2,6 +2,14 @@
 
 Style-Bert-VITSのCLIを使ったプログラムです。
 
+> [!NOTE]
+>
+> ※仮想環境内にtkinterがなく起動できない場合があるみたいです。
+>
+> Style-Bert-VITS2の "GitやPythonに馴染みが無い方" の方法で
+>
+> それがインストールされているとtkinterがなく起動できないかもしれません。
+
 ## アップデート情報
 
 <img src="https://github.com/p2-3r/GUI-for-Style-Bert-VITS2-Train/assets/159620178/2bf2a2a1-95a7-4878-8769-e5499cf061da" width="500">
