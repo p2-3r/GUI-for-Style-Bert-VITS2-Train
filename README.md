@@ -114,3 +114,9 @@ update.batを起動するとアップデートすることができます。
 seichi042Iさんの "transcribe_tool" を参考にさせていただきました。
 
 https://github.com/seichi042I/transcribe_tool
+
+## 予定
+
+このツールはStyle-Bert-VITS2の仮想環境を借りて起動してるので
+
+そうじゃない方法で新しく仮想環境を作って起動できるようにしたい
