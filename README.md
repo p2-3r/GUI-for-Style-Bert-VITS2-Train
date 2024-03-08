@@ -1,3 +1,7 @@
+# 注意: 今後はこちらを更新します。
+
+https://github.com/p2-3r/SBV2-with-Tkinter-GUI
+
 # GUI-for-Style-Bert-VITS2-Train
 
 Style-Bert-VITSのCLIを使ったプログラムです。
